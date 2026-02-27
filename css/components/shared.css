@@ -1,0 +1,42 @@
+.float__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--base-black); */
+    /* opacity: 0.5; */
+    z-index: 2;
+    pointer-events: none;
+}
+
+.float__overlay::before {
+    content: '';
+    display: block;
+    height: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.float__label {
+    position: sticky;
+    top: 40dvh;
+    color: white;
+    font-size: clamp(2rem, 6vw, 6rem);
+    font-family: var(--font-heading);
+    transform: translateY(-50%);
+    line-height: 3rem;
+}
+
+.float__label--static {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* top: 40dvh; */
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 60px;
+    font-family: var(--font-heading);
+    transform: translate(-50%, -50%);
+    /* line-height: 2.5rem; */
+}

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaimanas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="/js/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__wrapper">
+            <select name="currency" id="currency" class="navbar__select" aria-label="Select currency">
+                <option value="THB">TH - THB</option>
+                <option value="USD">US - USD</option>
+            </select>
+            <ul class="navbar__links">
+                <li class="navbar__link"><a href="#">WOMEN</a></li>
+                <li class="navbar__link"><a href="#">COLLECTION</a></li>
+                <li class="navbar__link navbar__link--has-submenu"><a href="#">EDITORAIL</a>
+                    <ul class="navbar__submenu">
+                        <li class="navbar__submenu-item"><a href="#">EDITORIAL 1</a></li>
+                        <li class="navbar__submenu-item"><a href="#">EDITORIAL 2</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__link"><a href="#">NEWS</a></li>
+                <li class="navbar__link"><a href="#">STORIES</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <a href="#" class="navbar__link--text">SIGN IN</a>
+                <img class="navbar__image--shopping" src="/assets/icons/bag-shopping.svg" alt="Shopping Bag">
+            </div>
+            <div class="navbar__backdrop"></div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <h1 class="site-heading">PLAIMANAS</h1>
+        <section class="hero" id="hero">
+            <video class="hero__video" autoplay muted loop>
+                <source src="/assets/videos/hero.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="new-product">
+            <div class="new-product__content--relative">
+                <img class="new-product__image" src="/assets/images/new-product.jpg" alt="">
+                <div class="float__overlay">
+                    <p class="float__label">NEW</p>
+                </div>
+
+            </div>
+            <div class="new-product__detail">
+                <h2 class="new-product__heading">Sed egestas, nibh a condimentum imperdiet</h2>
+                <p class="new-product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+                    nisl non rhoncus commodo, turpis
+                    elit
+                    ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+            </div>
+
+        </section>
+        <section class="best-seller">
+            <div class="best-seller__content--relative">
+                <video class="best-seller__video" autoplay muted loop>
+                    <source src="/assets/videos/best-seller.mp4" type="video/mp4">
+                </video>
+                <div class="float__overlay">
+                    <p class="float__label">BEST SELLER</p>
+                </div>
+            </div>
+            <div class="best-seller__detail">
+                <h2 class="best-seller__heading">Sed egestas, nibh a condimentum imperdiet</h2>
+                <p class="best-seller__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+                    nisl non rhoncus commodo, turpis
+                    elit
+                    ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+            </div>
+        </section>
+        <section class="collection">
+            <div class="collection__grid">
+                <div class="collection__content--relative collection__grid--hightlight">
+                    <img class="collection__image" src="/assets/images/collection-01.jpg" alt="">
+                    <video class="collection__video" autoplay muted loop>
+                        <source src="/assets/videos/collection-01-hover.mp4" type="video/mp4">
+                    </video>
+                    <div class="float__overlay">
+                        <p class="float__label--static">COLLECTION 01</p>
+                    </div>
+                </div>
+                <div class="collection__content--relative">
+                    <img class="collection__image" src="/assets/images/collection-02.jpg" alt="">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg" alt="">
+                    <div class="float__overlay">
+                        <p class="float__label--static">COLLECTION 02</p>
+                    </div>
+                </div>
+                <div class="collection__content--relative">
+                    <img class="collection__image" src="/assets/images/collection-03.jpg" alt="">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg" alt="">
+                    <div class="float__overlay">
+                        <p class="float__label--static">COLLECTION 03</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider__track">
+                <div class="slider__content">
+                    <p>BEST SELLING</p>
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <p>NEW ARRIVAL</p>
+                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                </div>
+                <div class="slider__content">
+                    <p>BEST SELLING</p>
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <p>NEW ARRIVAL</p>
+                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                </div>
+                <div class="slider__content">
+                    <p>BEST SELLING</p>
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <p>NEW ARRIVAL</p>
+                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__group">
+                <div class="services__content">
+                    <p class="services__title">WORLDWIDE SHIPPING</p>
+                    <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                        ornare,
+                        nisl non rhoncus commodo, turpis
+                        elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+                </div>
+                <div class="services__content">
+                    <p class="services__title">CUSTOMER SERVICE</p>
+                    <p class="services__description"><a href="">Lorem ipsum dolor sit amet</a>, consectetur adipiscing
+                        elit. Nam ornare,
+                        nisl non rhoncus commodo, turpis
+                        elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+                </div>
+                <div class="services__content">
+                    <p class="services__title">SECURE PAYMENT</p>
+                    <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                        ornare,
+                        nisl non rhoncus commodo, turpis
+                        elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
+                </div>
+            </div>
+        </section>
+        <section class="faqs">
+            <div class="faqs__wrapper">
+                <div class="faqs__header">
+                    <h2 class="faqs__title">FREQUENTLY ASKED QUESTIONS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare, nisl non rhoncus commodo.
+                    </p>
+                </div>
+
+                <div class="tabs__buttons">
+                    <button class="tabs__button tabs__button--active" data-tab="tab-1">ORDERS</button>
+                    <button class="tabs__button" data-tab="tab-2">SHIPPING</button>
+                    <button class="tabs__button" data-tab="tab-3">RETURNS & EXCHANGES</button>
+                    <button class="tabs__button" data-tab="tab-4">SIZING & PRODUCTS</button>
+                </div>
+
+                <div class="tabs__content tabs__content--active" id="tab-1">
+                    <div class="accordion">
+                        <div class="accordion__item accordion__item--open">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs__content" id="tab-2">
+                    <div class="accordion">
+                        <div class="accordion__item accordion__item--open">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">1How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs__content" id="tab-3">
+                    <div class="accordion">
+                        <div class="accordion__item accordion__item--open">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">1How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs__content" id="tab-4">
+                    <div class="accordion">
+                        <div class="accordion__item accordion__item--open">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">1How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__wrapper">
+                                <div class="accordion__header">
+                                    <h3 class="accordion__title">How do I place an order?</h3>
+                                    <img class="accordion__icon" src="/assets/icons/angle-down.svg" alt="Angle Down">
+                                </div>
+                                <div class="accordion__content">
+                                    <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nam ornare, nisl non rhoncus
+                                        commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__wrapper">
+                <div class="form__header">
+                    <h2 class="form__title">MAKE AN INQUIRY</h2>
+                    <p class="form__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+                        nisl non rhoncus commodo.
+                    </p>
+                </div>
+                <div class="form__body">
+                    <form action="">
+                        <div class="radio__group">
+                            <div class="radio__item">
+                                <input type="radio" name="mode" id="onsite">
+                                <label for="onsite">Onsite</label>
+                            </div>
+                            <div class="radio__item">
+                                <input type="radio" name="mode" id="hybrid">
+                                <label for="hybrid">Hybrid</label>
+                            </div>
+                        </div>
+                        <div class="input__group">
+                            <div class="form__field">
+                                <input class="form__input" type="text" id="name" placeholder=" " required
+                                    autocomplete="name">
+                                <label class="form__label" for="name">Full Name</label>
+                            </div>
+                            <div class="form__field">
+                                <input class="form__input" type="email" id="email" placeholder=" " required
+                                    autocomplete="email">
+                                <label class="form__label" for="email">Email</label>
+                            </div>
+                            <div class="form__field">
+                                <input class="form__input" type="tel" id="phone" placeholder=" " required
+                                    autocomplete="tel">
+                                <label class="form__label" for="phone">Phone Number</label>
+                            </div>
+                            <div class="form__field">
+                                <select class="form__select" id="reason" required aria-label="Reason for inquiry">
+                                    <option disabled selected hidden></option>
+                                    <option>General inquiry</option>
+                                    <option>Job Application</option>
+                                    <option>Media & Press</option>
+                                </select>
+                                <label class="form__label" for="reason">Select Subject</label>
+                            </div>
+                        </div>
+                        <div class="checkbox__group">
+                            <div class="checkbox__item">
+                                <input type="checkbox" id="terms">
+                                <label for="terms">I agree to all terms & conditions</label>
+                            </div>
+                        </div>
+
+                        <button class="primary" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <button class="button--text">HOMEPAGE</button>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__sitemaps">
+                <div class="footer__sitemap">
+                    <p class="footer__sitemap-title">ABOUT</p>
+                    <ul>
+                        <li><a href="/women" class="text-only">Women</a></li>
+                        <li><a href="/collection" class="text-only">Collections</a></li>
+                        <li><a href="/editorial" class="text-only">Editorial</a></li>
+                        <li><a href="/stories" class="text-only">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sitemap">
+                    <p class="footer__sitemap-title">HELP</p>
+                    <ul>
+                        <li><a href="/help/women" class="text-only">Women</a></li>
+                        <li><a href="/help/collections" class="text-only">Collections</a></li>
+                        <li><a href="/help/editorial" class="text-only">Editorial</a></li>
+                        <li><a href="/help/stories" class="text-only">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sitemap">
+                    <p class="footer__sitemap-title">SOCIAL</p>
+                    <ul>
+                        <li><a href="/social/women" class="text-only">Women</a></li>
+                        <li><a href="/social/collections" class="text-only">Collections</a></li>
+                        <li><a href="/social/editorial" class="text-only">Editorial</a></li>
+                        <li><a href="/social/stories" class="text-only">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__sitemap">
+                    <p class="footer__sitemap-title">LEGAL</p>
+                    <ul>
+                        <li><a href="/legal/terms" class="text-only">Terms & Conditions</a></li>
+                        <li><a href="/legal/privacy" class="text-only">Privacy Policy</a></li>
+                        <li><a href="/legal/cookies" class="text-only">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <p class="footer__newsletter-title">NEWSLETTER</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input class="footer__newsletter-input" type="email" id="newsletter"
+                                placeholder="Enter your email" aria-label="Email for newsletter">
+                            <button type="submit" class="button--secondary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy;Plaimanas</p>
+                <p>Web by ::*</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+:root {
+    /* font */
+    --font-heading: 'HankenGrotesk', Arial, sans-serif;
+    --font-body: Arial, sans-serif;
+
+    /* 10px */
+    --text-xs: 0.625rem;
+    /* 12px */
+    --text-sm: 0.75rem;
+    /* 14px */
+    --text-base: 0.875rem;
+    /* 16px */
+    --text-lg: 1rem;
+    /* 18px */
+    --text-xl: 1.125rem;
+    /* 20px */
+    --text-2xl: 1.25rem;
+    /* 24px */
+    --text-3xl: 1.5rem;
+    /* 30px */
+    --text-4xl: 1.875rem;
+    /* 32px */
+    --text-5xl: 2.25rem;
+    /* 36px */
+    --text-6xl: 3rem;
+
+    /* color */
+    --base-white: #ffffff;
+    --base-black: #000000;
+    --base-gray-900: #333333;
+    --base-gray-700: #666666;
+    --base-gray-500: #808080;
+    --base-gray-300: #b2b2b2;
+    --base-gray-100: #e0e0e0;
+    --base-gray-50: #f8f9f8;
+
+    --color-background: var(--base-white);
+    --color-text-primary: var(--base-black);
+    --color-text-secondary: var(--base-gray-900);
+
+    /* Breckpoint */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        /* 12px */
+        --text-xs: 0.75rem;
+        /* 14px */
+        --text-sm: 0.875rem;
+        /* 16px */
+        --text-base: 1rem;
+        /* 18px */
+        --text-lg: 1.125rem;
+        /* 20px */
+        --text-xl: 1.25rem;
+        /* 24px */
+        --text-2xl: 1.5rem;
+        /* 30px */
+        --text-3xl: 1.875rem;
+        /* 32px */
+        --text-4xl: 2.25rem;
+        /* 36px */
+        --text-5xl: 3rem;
+        /* 48px */
+        --text-6xl: 4rem;
+    }
+}

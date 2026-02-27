@@ -1,0 +1,31 @@
+/* base */
+@import './base/reset.css';
+@import './base/variable.css';
+@import './base/typography.css';
+
+/* components */
+@import './components/site-heading.css';
+@import './components/shared.css';
+@import './components/button.css';
+
+/* layout */
+@import './layout/hero.css';
+@import './layout/navbar.css';
+@import './layout/best-seller.css';
+@import './layout/new-product.css';
+@import './layout/collection.css';
+@import './layout/slider.css';
+@import './layout/services.css';
+@import './layout/faqs.css';
+@import './layout/form.css';
+@import './layout/footer.css';
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-body);
+}
+
+.main-content {
+    position: relative;
+    /* z-index: 1; */
+}

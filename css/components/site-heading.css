@@ -1,0 +1,12 @@
+.site-heading {
+    font-family: var(--font-heading);
+    font-size: 14vw;
+    color: var(--base-white);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1.25);
+    z-index: 999;
+    mix-blend-mode: difference;
+    line-height: 1;
+    pointer-events: none;
+}

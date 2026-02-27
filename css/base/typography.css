@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('/assets/fonts/hanken-grotesk/HankenGrotesk-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    display: swap;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,125 @@
+.faqs {
+    background-color: var(--base-black);
+    color: var(--base-white);
+    padding: 6rem 1.5rem;
+}
+
+.faqs__wrapper {
+    max-width: var(--breakpoint-xl);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.faqs__header {
+    margin-bottom: 2rem;
+}
+
+.faqs__title {
+    font-size: 24px;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.tabs__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs__button {
+    padding: 0.5rem 1rem;
+    background-color: var(--base-gray-900);
+    color: var(--base-white);
+    border: 1px solid var(--base-gray-500);
+    border-radius: 1000px;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tabs__button--active {
+    background-color: var(--base-white);
+    color: var(--base-black);
+    border: 1px solid var(--base-black);
+}
+
+.tabs__content {
+    width: 100%;
+    display: none;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.tabs__content--active {
+    display: block;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion__item {
+    border-bottom: 1px solid var(--base-gray-900);
+}
+
+.accordion__item--open .accordion__content {
+    display: block;
+    opacity: 1;
+}
+
+.accordion__item--open .accordion__icon {
+    transform: rotate(180deg);
+}
+
+.accordion__wrapper {
+    padding: 0.5rem 0;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.accordion__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(100%);
+}
+
+.accordion__content {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.accordion__description {
+    margin-bottom: 1rem;
+    color: var(--base-gray-300);
+}
+
+@media (min-width: 480px) {
+    .faqs {
+        padding: 6rem 2rem;
+    }
+
+    .faqs__title {
+        font-size: 40px;
+    }
+
+    .tabs__buttons {
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+}
