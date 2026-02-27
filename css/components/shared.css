@@ -19,7 +19,7 @@
 
 .float__label {
     position: sticky;
-    top: 40dvh;
+    top: 35dvh;
     color: white;
     font-size: clamp(2rem, 6vw, 6rem);
     font-family: var(--font-heading);

@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plaimanas">
     <title>Plaimanas</title>
+    <link rel="stylesheet" href="/js/lib/choices.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="module" src="/js/main.js"></script>
+    <script src="/js/lib/choices.min.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -31,7 +34,7 @@
                 <li class="navbar__link"><a class="navbar__link--item" href="#">NEWS</a></li>
                 <li class="navbar__link"><a class="navbar__link--item" href="#">STORIES</a></li>
             </ul>
-            <img class="navbar__image--menu" src="/assets/icons/bars.svg" alt="Hamurger Menu">
+            <img class="navbar__image--menu" src="/assets/icons/equals.svg" alt="Hamurger Menu">
             <img class="navbar__image--close-menu" src="/assets/icons/xmark.svg" alt="Close Menu">
             <div class="navbar__actions">
                 <a href="#" class="navbar__link--text">SIGN IN</a>
@@ -401,13 +404,13 @@
                                 <label class="form__label" for="phone">Phone Number</label>
                             </div>
                             <div class="form__field">
-                                <select class="form__select" id="reason" required aria-label="Reason for inquiry">
+                                <select class="form__select" id="reason" required aria-label="Reason">
                                     <option disabled selected hidden></option>
                                     <option>General inquiry</option>
                                     <option>Job Application</option>
                                     <option>Media & Press</option>
                                 </select>
-                                <label class="form__label" for="reason">Select Subject</label>
+                                <label class="form__label" for="reason">Select Subject*</label>
                             </div>
                         </div>
                         <div class="checkbox__group">
