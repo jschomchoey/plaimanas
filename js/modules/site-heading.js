@@ -1,14 +1,46 @@
-const navbar = document.querySelector("nav");
-const mainContent = document.querySelector(".main-content");
-const siteHeading = document.querySelector(".site-heading");
+const heading = document.querySelector(".site-heading");
+const hero = document.querySelector(".hero");
+const nav = document.querySelector("nav");
 
-// const minSize = 42;
+let maxSize;
+let maxSizeMobile;
+let scrollRange;
 
-const updateNavbarHeight = () => {
-  const navbarHeight = navbar.offsetHeight;
-  mainContent.style.marginTop = `${navbarHeight}px`;
-  // siteHeading.style.fontSize = `${navbarHeight / 2}px`;
+const minSize = 42; // px
+
+const calculateValues = () => {
+  maxSize = window.innerWidth * 0.14; // 14vw
+  maxSizeMobile = window.innerWidth * 0.135; // 13.5vw
+  scrollRange = hero.offsetHeight - nav.offsetHeight;
 };
 
-window.addEventListener("load", updateNavbarHeight);
-window.addEventListener("resize", updateNavbarHeight);
+const updateHeading = () => {
+  if (window.innerWidth < 480) {
+    heading.style.fontSize = `${maxSizeMobile}px`;
+    heading.style.lineHeight = `1`;
+    return;
+  }
+
+  const scroll = Math.min(window.scrollY, scrollRange);
+  const progress = scrollRange > 0 ? scroll / scrollRange : 0;
+  const size = maxSize - (maxSize - minSize) * progress;
+  const lineHeight = 1 + 0.75 * progress;
+
+  heading.style.fontSize = `${size}px`;
+  heading.style.lineHeight = `${lineHeight}`;
+};
+
+const init = () => {
+  calculateValues();
+  updateHeading();
+};
+
+window.addEventListener("load", init);
+window.addEventListener("resize", init);
+window.addEventListener(
+  "scroll",
+  () => {
+    requestAnimationFrame(updateHeading);
+  },
+  { passive: true },
+);

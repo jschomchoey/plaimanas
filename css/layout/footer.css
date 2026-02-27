@@ -34,7 +34,7 @@
 
 .footer__sitemap li {
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: var(--text-xs);
 }
 

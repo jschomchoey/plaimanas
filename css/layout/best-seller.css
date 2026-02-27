@@ -34,9 +34,3 @@
     font-size: var(--text-sm);
     margin: 1.25rem 0;
 }
-
-@media (min-width: 480px) {
-    .best-seller__video {
-        aspect-ratio: 16 / 9;
-    }
-}

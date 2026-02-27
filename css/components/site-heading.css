@@ -1,6 +1,6 @@
 .site-heading {
     font-family: var(--font-heading);
-    font-size: 14vw;
+    font-size: 13.5vw;
     color: var(--base-white);
     position: fixed;
     left: 50%;
@@ -9,4 +9,13 @@
     mix-blend-mode: difference;
     line-height: 1;
     pointer-events: none;
+    /* margin-top: 1rem; */
+    /* transition: margin-top 0.3s ease; */
+}
+
+
+@media (min-width: 480px) {
+    .site-heading {
+        font-size: 14vw;
+    }
 }

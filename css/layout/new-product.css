@@ -43,5 +43,6 @@
 
     .new-product__image {
         max-width: 560px;
+        aspect-ratio: 1 / 1;
     }
 }

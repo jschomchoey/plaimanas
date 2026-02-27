@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plaimanas">
     <title>Plaimanas</title>
     <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="/js/main.js"></script>
@@ -17,16 +18,18 @@
                 <option value="USD">US - USD</option>
             </select>
             <ul class="navbar__links">
-                <li class="navbar__link"><a href="#">WOMEN</a></li>
-                <li class="navbar__link"><a href="#">COLLECTION</a></li>
-                <li class="navbar__link navbar__link--has-submenu"><a href="#">EDITORAIL</a>
+                <li class="navbar__link"><a class="navbar__link--item" href="#">WOMEN</a></li>
+                <li class="navbar__link"><a class="navbar__link--item" href="#">COLLECTION</a></li>
+                <li class="navbar__link navbar__link--has-submenu"><a class="navbar__link--item" href="#">EDITORAIL</a>
                     <ul class="navbar__submenu">
-                        <li class="navbar__submenu-item"><a href="#">EDITORIAL 1</a></li>
-                        <li class="navbar__submenu-item"><a href="#">EDITORIAL 2</a></li>
+                        <li class="navbar__submenu-item"><a href="#">A.S.C</a></li>
+                        <li class="navbar__submenu-item"><a href="#">BAZAAR</a></li>
+                        <li class="navbar__submenu-item"><a href="#">ELLE</a></li>
+                        <li class="navbar__submenu-item"><a href="#">GQ</a></li>
                     </ul>
                 </li>
-                <li class="navbar__link"><a href="#">NEWS</a></li>
-                <li class="navbar__link"><a href="#">STORIES</a></li>
+                <li class="navbar__link"><a class="navbar__link--item" href="#">NEWS</a></li>
+                <li class="navbar__link"><a class="navbar__link--item" href="#">STORIES</a></li>
             </ul>
             <div class="navbar__actions">
                 <a href="#" class="navbar__link--text">SIGN IN</a>
@@ -38,13 +41,13 @@
     <main class="main-content">
         <h1 class="site-heading">PLAIMANAS</h1>
         <section class="hero" id="hero">
-            <video class="hero__video" autoplay muted loop>
+            <video class="hero__video" autoplay muted loop playsinline>
                 <source src="/assets/videos/hero.mp4" type="video/mp4">
             </video>
         </section>
         <section class="new-product">
             <div class="new-product__content--relative">
-                <img class="new-product__image" src="/assets/images/new-product.jpg" alt="">
+                <img class="new-product__image" src="/assets/images/new-product.jpg" alt="New Product">
                 <div class="float__overlay">
                     <p class="float__label">NEW</p>
                 </div>
@@ -61,7 +64,7 @@
         </section>
         <section class="best-seller">
             <div class="best-seller__content--relative">
-                <video class="best-seller__video" autoplay muted loop>
+                <video class="best-seller__video" autoplay muted loop playsinline>
                     <source src="/assets/videos/best-seller.mp4" type="video/mp4">
                 </video>
                 <div class="float__overlay">
@@ -79,8 +82,8 @@
         <section class="collection">
             <div class="collection__grid">
                 <div class="collection__content--relative collection__grid--hightlight">
-                    <img class="collection__image" src="/assets/images/collection-01.jpg" alt="">
-                    <video class="collection__video" autoplay muted loop>
+                    <img class="collection__image" src="/assets/images/collection-01.jpg" alt="Collection 01">
+                    <video class="collection__video" autoplay muted loop playsinline>
                         <source src="/assets/videos/collection-01-hover.mp4" type="video/mp4">
                     </video>
                     <div class="float__overlay">
@@ -88,15 +91,17 @@
                     </div>
                 </div>
                 <div class="collection__content--relative">
-                    <img class="collection__image" src="/assets/images/collection-02.jpg" alt="">
-                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg" alt="">
+                    <img class="collection__image" src="/assets/images/collection-02.jpg" alt="Collection 02">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg"
+                        alt="Collection 02 Hover">
                     <div class="float__overlay">
                         <p class="float__label--static">COLLECTION 02</p>
                     </div>
                 </div>
                 <div class="collection__content--relative">
-                    <img class="collection__image" src="/assets/images/collection-03.jpg" alt="">
-                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg" alt="">
+                    <img class="collection__image" src="/assets/images/collection-03.jpg" alt="Collection 03">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg"
+                        alt="Collection 03 Hover">
                     <div class="float__overlay">
                         <p class="float__label--static">COLLECTION 03</p>
                     </div>
@@ -136,7 +141,7 @@
                 </div>
                 <div class="services__content">
                     <p class="services__title">CUSTOMER SERVICE</p>
-                    <p class="services__description"><a href="">Lorem ipsum dolor sit amet</a>, consectetur adipiscing
+                    <p class="services__description"><a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing
                         elit. Nam ornare,
                         nisl non rhoncus commodo, turpis
                         elit ultricies justo, vitae molestie quam justo ut lacus. Proin vitae</p>
@@ -409,7 +414,7 @@
                     </form>
                 </div>
             </div>
-            <button class="button--text">HOMEPAGE</button>
+            <a href="#hero" class="button--text">HOMEPAGE</a>
         </section>
 
     </main>
@@ -419,36 +424,33 @@
                 <div class="footer__sitemap">
                     <p class="footer__sitemap-title">ABOUT</p>
                     <ul>
-                        <li><a href="/women" class="text-only">Women</a></li>
-                        <li><a href="/collection" class="text-only">Collections</a></li>
-                        <li><a href="/editorial" class="text-only">Editorial</a></li>
-                        <li><a href="/stories" class="text-only">Stories</a></li>
+                        <li><a href="#" class="text-only">Women</a></li>
+                        <li><a href="#" class="text-only">Collections</a></li>
+                        <li><a href="#" class="text-only">Editorial</a></li>
+                        <li><a href="#" class="text-only">Stories</a></li>
                     </ul>
                 </div>
                 <div class="footer__sitemap">
                     <p class="footer__sitemap-title">HELP</p>
                     <ul>
-                        <li><a href="/help/women" class="text-only">Women</a></li>
-                        <li><a href="/help/collections" class="text-only">Collections</a></li>
-                        <li><a href="/help/editorial" class="text-only">Editorial</a></li>
-                        <li><a href="/help/stories" class="text-only">Stories</a></li>
+                        <li><a href="#" class="text-only">Payment Notification</a></li>
+                        <li><a href="#" class="text-only">Customer Service</a></li>
+                        <li><a href="#" class="text-only">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer__sitemap">
                     <p class="footer__sitemap-title">SOCIAL</p>
                     <ul>
-                        <li><a href="/social/women" class="text-only">Women</a></li>
-                        <li><a href="/social/collections" class="text-only">Collections</a></li>
-                        <li><a href="/social/editorial" class="text-only">Editorial</a></li>
-                        <li><a href="/social/stories" class="text-only">Stories</a></li>
+                        <li><a href="#" class="text-only">Instragram</a></li>
+                        <li><a href="#" class="text-only">Facebook</a></li>
                     </ul>
                 </div>
                 <div class="footer__sitemap">
                     <p class="footer__sitemap-title">LEGAL</p>
                     <ul>
-                        <li><a href="/legal/terms" class="text-only">Terms & Conditions</a></li>
-                        <li><a href="/legal/privacy" class="text-only">Privacy Policy</a></li>
-                        <li><a href="/legal/cookies" class="text-only">Cookie Policy</a></li>
+                        <li><a href="#" class="text-only">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-only">Privacy Policy</a></li>
+                        <li><a href="#" class="text-only">Cookie Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer__newsletter">
@@ -457,13 +459,13 @@
                         <div class="input-group">
                             <input class="footer__newsletter-input" type="email" id="newsletter"
                                 placeholder="Enter your email" aria-label="Email for newsletter">
-                            <button type="submit" class="button--secondary">Subscribe</button>
+                            <button type="submit" class="button--secondary">SUBSCRIBE</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="footer__copyright">
-                <p>&copy;Plaimanas</p>
+                <p>&copy;PLAIMANAS</p>
                 <p>Web by ::*</p>
             </div>
         </div>

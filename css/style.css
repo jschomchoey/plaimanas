@@ -20,6 +20,10 @@
 @import './layout/form.css';
 @import './layout/footer.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-background);
     font-family: var(--font-body);
@@ -28,4 +32,5 @@ body {
 .main-content {
     position: relative;
     /* z-index: 1; */
+    margin-top: 52px;
 }
