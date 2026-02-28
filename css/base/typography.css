@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'HankenGrotesk';
-    src: url('/assets/fonts/hanken-grotesk/HankenGrotesk-Black.ttf') format('truetype');
+    src: url('/assets/fonts/hanken-grotesk/HankenGrotesk-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
-    display: swap;
+    font-display: swap;
 }
 
 body {

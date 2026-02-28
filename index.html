@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plaimanas">
     <title>Plaimanas</title>
+    <link rel="preload" href="/assets/fonts/hanken-grotesk/HankenGrotesk-Black.woff2" as="font" type="font/woff2"
+        crossorigin>
     <link rel="stylesheet" href="/js/lib/choices.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" as="image" href="/assets/images/hero-poster.webp" fetchpriority="high">
     <script src="/js/lib/choices.min.js" defer></script>
     <script type="module" src="/js/main.js" defer></script>
-
 </head>
 
 <body>
@@ -63,13 +65,13 @@
     <main class="main-content">
         <h1 class="site-heading">PLAIMANAS</h1>
         <section class="hero" id="hero">
-            <video class="hero__video" autoplay muted loop playsinline poster="/assets/images/hero-poster.jpg">
-                <source src="/assets/videos/hero.mp4" type="video/mp4">
+            <video class="hero__video" autoplay muted loop playsinline poster="/assets/images/hero-poster.webp">
+                <source src="/assets/videos/hero.webm" type="video/mp4">
             </video>
         </section>
         <section class="new-product">
             <div class="new-product__content--relative">
-                <img class="new-product__image" src="/assets/images/new-product.jpg" alt="New Product">
+                <img class="new-product__image" src="/assets/images/new-product.webp" alt="New Product" loading="lazy">
                 <div class="float__overlay">
                     <p class="float__label">NEW</p>
                 </div>
@@ -87,7 +89,7 @@
         <section class="best-seller">
             <div class="best-seller__content--relative">
                 <video class="best-seller__video" autoplay muted loop playsinline>
-                    <source src="/assets/videos/best-seller.mp4" type="video/mp4">
+                    <source src="/assets/videos/best-seller.webm" type="video/mp4">
                 </video>
                 <div class="float__overlay">
                     <p class="float__label">BEST SELLER</p>
@@ -104,26 +106,29 @@
         <section class="collection">
             <div class="collection__grid">
                 <div class="collection__content--relative collection__grid--hightlight">
-                    <img class="collection__image" src="/assets/images/collection-01.jpg" alt="Collection 01">
+                    <img class="collection__image" src="/assets/images/collection-01.webp" alt="Collection 01"
+                        loading="lazy">
                     <video class="collection__video" autoplay muted loop playsinline>
-                        <source src="/assets/videos/collection-01-hover.mp4" type="video/mp4">
+                        <source src="/assets/videos/collection-01-hover.webm" type="video/mp4">
                     </video>
                     <div class="float__overlay">
                         <p class="float__label--static">COLLECTION 01</p>
                     </div>
                 </div>
                 <div class="collection__content--relative">
-                    <img class="collection__image" src="/assets/images/collection-02.jpg" alt="Collection 02">
-                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg"
-                        alt="Collection 02 Hover">
+                    <img class="collection__image" src="/assets/images/collection-02.webp" alt="Collection 02"
+                        loading="lazy">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.webp"
+                        alt="Collection 02 Hover" loading="lazy">
                     <div class="float__overlay">
                         <p class="float__label--static">COLLECTION 02</p>
                     </div>
                 </div>
                 <div class="collection__content--relative">
-                    <img class="collection__image" src="/assets/images/collection-03.jpg" alt="Collection 03">
-                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.jpg"
-                        alt="Collection 03 Hover">
+                    <img class="collection__image" src="/assets/images/collection-03.webp" alt="Collection 03"
+                        loading="lazy">
+                    <img class="collection__image--hover" src="/assets/images/collection-02-03-hover.webp"
+                        alt="Collection 03 Hover" loading="lazy">
                     <div class="float__overlay">
                         <p class="float__label--static">COLLECTION 03</p>
                     </div>
@@ -134,21 +139,24 @@
             <div class="slider__track">
                 <div class="slider__content">
                     <p>BEST SELLING</p>
-                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.webp" alt="Arrow"
+                        loading="lazy">
                     <p>NEW ARRIVAL</p>
-                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow" src="/assets/images/arrow-left.webp" alt="Arrow" loading="lazy">
                 </div>
                 <div class="slider__content">
                     <p>BEST SELLING</p>
-                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.webp" alt="Arrow"
+                        loading="lazy">
                     <p>NEW ARRIVAL</p>
-                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow" src="/assets/images/arrow-left.webp" alt="Arrow" loading="lazy">
                 </div>
                 <div class="slider__content">
                     <p>BEST SELLING</p>
-                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow rotate-180" src="/assets/images/arrow-left.webp" alt="Arrow"
+                        loading="lazy">
                     <p>NEW ARRIVAL</p>
-                    <img class="slider__arrow" src="/assets/images/arrow-left.png" alt="Arrow">
+                    <img class="slider__arrow" src="/assets/images/arrow-left.webp" alt="Arrow" loading="lazy">
                 </div>
             </div>
         </section>
