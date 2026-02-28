@@ -23,6 +23,7 @@
     padding-right: 2rem;
     gap: 2rem;
     animation: infinity-horizontal-scroll 8s linear infinite;
+    will-change: transform;
 }
 
 .slider__arrow {

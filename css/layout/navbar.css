@@ -28,7 +28,7 @@
 
 .navbar__link {
     font-weight: 400;
-    transition: all 0.5s ease;
+    transition: font-weight 0.5s ease;
 }
 
 .navbar__link--item {
@@ -43,7 +43,7 @@
 
 .navbar__link--text {
     color: var(--base-black);
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     white-space: nowrap;
 }
 
@@ -81,7 +81,7 @@
     pointer-events: none;
     list-style: none;
     min-width: 10rem;
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease;
     margin-left: -0.5rem;
 }
 
@@ -179,7 +179,7 @@
 .navbar-mobile__link--item {
     font-size: var(--text-md);
     font-weight: 400;
-    transition: all 0.3s ease;
+    transition: font-weight 0.3s ease, font-size 0.3s ease;
 }
 
 .navbar-mobile__link--item--open {
@@ -211,7 +211,7 @@
 .navbar .choices__item--selectable {
     font-size: var(--text-sm);
     white-space: nowrap;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .navbar .choices__item--selectable:hover {

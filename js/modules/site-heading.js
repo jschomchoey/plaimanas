@@ -35,8 +35,16 @@ const init = () => {
   updateHeading();
 };
 
+const debounce = (fn, ms) => {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), ms);
+  };
+};
+
 window.addEventListener("load", init);
-window.addEventListener("resize", init);
+window.addEventListener("resize", debounce(init, 150));
 window.addEventListener(
   "scroll",
   () => {
